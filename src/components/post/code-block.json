@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_post_code_blocks",
+  "info": {
+    "displayName": "Code Block",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "js",
+        "ts",
+        "jsx",
+        "tsx",
+        "bash",
+        "node",
+        "css",
+        "sass",
+        "html",
+        "yml",
+        "javascript",
+        "typescript",
+        "php"
+      ]
+    },
+    "code": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

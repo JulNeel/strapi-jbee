@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_post_image_blocks",
+  "info": {
+    "displayName": "Image Block",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "alt": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "large",
+        "medium",
+        "small"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_post_text_blocks",
+  "info": {
+    "displayName": "Text Block",
+    "icon": "feather"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
