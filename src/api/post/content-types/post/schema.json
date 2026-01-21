@@ -15,6 +15,13 @@
       "type": "string",
       "required": true
     },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "slug": {
       "type": "uid",
       "targetField": "title",
@@ -22,13 +29,6 @@
     },
     "excerpt": {
       "type": "text"
-    },
-    "coverImage": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images"
-      ]
     },
     "author": {
       "type": "relation",
