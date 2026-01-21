@@ -11,6 +11,12 @@ export const CALLOUT_CLASSES = [
   'callout-secondary',
 ] as const;
 
+export const IMAGE_CLASSES = [
+  'image-rounded',
+] as const;
+
+export type ImageClass = (typeof IMAGE_CLASSES)[number];
+
 export type CalloutClass = (typeof CALLOUT_CLASSES)[number];
 
 export const editorStyles = `
@@ -59,5 +65,12 @@ export const editorStyles = `
   .ck-content .callout-secondary {
     background-color: #616161;
     border-left-color: #424242;
+  }
+
+  /* Rounded image style */
+  .ck-content figure.image-rounded img {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
 `;

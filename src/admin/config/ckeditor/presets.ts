@@ -1,6 +1,6 @@
 import { Style, GeneralHtmlSupport } from "ckeditor5";
 import { defaultHtmlPreset, defaultMarkdownPreset, type Preset } from "@_sh/strapi-plugin-ckeditor";
-import { editorStyles, CALLOUT_CLASSES } from "./styles";
+import { editorStyles, CALLOUT_CLASSES, IMAGE_CLASSES } from "./styles";
 
 /**
  * Custom HTML preset with callout blocks support
@@ -75,6 +75,11 @@ export const customHtmlPreset: Preset = {
           element: "p",
           classes: ["callout-secondary"],
         },
+        {
+          name: "Image ronde",
+          element: "figure",
+          classes: ["image-rounded"],
+        },
       ],
     },
     htmlSupport: {
@@ -82,6 +87,10 @@ export const customHtmlPreset: Preset = {
         {
           name: "p",
           classes: [...CALLOUT_CLASSES],
+        },
+        {
+          name: "figure",
+          classes: [...IMAGE_CLASSES],
         },
       ],
     },

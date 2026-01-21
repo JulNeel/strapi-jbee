@@ -6,4 +6,4 @@ export const ckeditorConfig: PluginConfig = {
 };
 
 export { customHtmlPreset, defaultMarkdownPreset } from './presets';
-export { editorStyles, CALLOUT_CLASSES, type CalloutClass } from './styles';
+export { editorStyles, CALLOUT_CLASSES, IMAGE_CLASSES, type CalloutClass, type ImageClass } from './styles';
