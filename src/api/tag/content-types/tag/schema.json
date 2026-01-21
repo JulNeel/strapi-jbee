@@ -9,11 +9,7 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": false
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "name": {
       "type": "string",
@@ -29,6 +25,12 @@
       "relation": "manyToMany",
       "target": "api::post.post",
       "inversedBy": "tags"
+    },
+    "ressources": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ressource.ressource",
+      "mappedBy": "tags"
     }
   }
 }

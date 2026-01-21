@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ressource_categories",
+  "info": {
+    "singularName": "ressource-categorie",
+    "pluralName": "ressource-categories",
+    "displayName": "RessourceCategories"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "ressources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ressource.ressource",
+      "mappedBy": "ressource_category"
+    }
+  }
+}
