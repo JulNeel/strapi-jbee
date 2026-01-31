@@ -59,6 +59,9 @@
       "options": {
         "preset": "Default HTML editor"
       }
+    },
+    "GenerateTableOfContent": {
+      "type": "boolean"
     }
   }
 }
