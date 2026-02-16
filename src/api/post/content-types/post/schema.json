@@ -62,6 +62,10 @@
     },
     "GenerateTableOfContent": {
       "type": "boolean"
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
